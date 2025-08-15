@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
       modalImg.alt = img.alt;
       modal.classList.remove('hidden');
       setTimeout(() => modal.classList.add('opacity-100'), 10);
+      // Prevent body scroll when modal is open
+      document.body.style.overflow = 'hidden';
     });
   });
 
@@ -21,6 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.classList.add('hidden');
     modal.classList.remove('opacity-100');
     modalImg.src = '';
+    // Restore body scroll
+    document.body.style.overflow = '';
   });
 
   // close modal on background click
@@ -29,6 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
       modal.classList.add('hidden');
       modal.classList.remove('opacity-100');
       modalImg.src = '';
+      // Restore body scroll
+      document.body.style.overflow = '';
     }
   });
 
@@ -38,6 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
       modal.classList.add('hidden');
       modal.classList.remove('opacity-100');
       modalImg.src = '';
+      // Restore body scroll
+      document.body.style.overflow = '';
     }
   });
 
