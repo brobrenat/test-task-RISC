@@ -4,6 +4,9 @@ content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: [
+    'hidden', 'block', 'opacity-0', 'opacity-100'
+  ],
   theme: {
     extend: {
       colors: {
