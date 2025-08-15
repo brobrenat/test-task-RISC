@@ -1,5 +1,6 @@
 module.exports = {
-  content: [
+darkMode: ['class', '[data-theme="dark"]'],  
+content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
@@ -18,7 +19,7 @@ module.exports = {
         'md': '768px',
         'lg': '1024px',
       },
-        maxWidth: {
+      maxWidth: {
         '2xl': '42rem', 
         'banner': '48rem', 
       },
